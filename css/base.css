@@ -5,16 +5,64 @@ html {
   box-sizing: inherit;
 }
 body {
-  background-color: black; /* Default backgr color for mobile view */
+  width: 480px;
+  height: 1055px;
+  margin: auto;
+  /* overflow: auto; */
+}
+main {
+
+}
+header, aside, div, footer { /* Styles for boxes on same level */
+                     /* OR add .box class to all these elems instead */
+  background-color: black;
   color: lightgray;
-  max-width: 960px;
-  min-width: 480;
+  width: 480px;
+  display: block; /* OR inline-block? */
+  float: left;
+  outline-width: 1px;
+  outline-style: solid;
+  outline-color: gray; 
+  /* overflow: auto; */
+}
+p { /* Center ID letters horizontally and vertically */
+  text-align: center;
+  display: block; /* OR inline-block? */
+  /* position: relative;
+  float: left;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
+}
+header {
+  height: 75px;
+}
+aside {
+  height: 150px;
+}
+.rect-box {
+  height: 125px;
+}
+.square-box { /* For smaller internal boxes for e,f,g,h */
+  width: 240px;
+  height: 250px;
+}
+footer {
+  height: 80px;
 }
 
 /* Change background color for desktop view */
-@media screen and (min-width: 481px) {
-  background-color: lightgray;
-  color: black;
+@media screen and (min-width: 780px) {
+  header, div, aside, footer {
+    background-color: lightgray;
+    color: black;
+    outline-width: 1px;
+    outline-style: solid;
+    outline-color: gray; 
+    width: 960px;
+    display: inline-block;
+    /* float: left; */
+  }
 }
 
 /* Breakpoint at 768px */
