@@ -1,0 +1,30 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body {
+  background-color: black; /* Default backgr color for mobile view */
+  color: lightgray;
+  max-width: 960px;
+  min-width: 480;
+}
+
+/* Change background color for desktop view */
+@media screen and (min-width: 481px) {
+  background-color: lightgray;
+  color: black;
+}
+
+/* Breakpoint at 768px */
+/* Must be responsive when page is refreshed */
+/* Use SMACSS modularity */
+/* Use float-based layout */
+/* Use fixed px widths and exactly match widths specified in comps */
+    /* Try 'outline' instead of border */
+    /* Try box-sizing: border-box */
+/* ID letter in each box should be centered horizont. and vert. */
+/* For desktop view, content should be in channel of 960px max-width */
+/* Use diff backgr color for boxes depending on mobile or desktop view */
+    /* Use MQs for this? */
