@@ -47,6 +47,12 @@ footer {
 /*++++++++++++++++++++++++++++++++++++++++++++++++++*/
 /* Change background color for desktop view */
 @media screen and (min-width: 768px) {
+  
+  /* OR COULD DO AN ID FOR EACH LETTER/BOX: #a, #b, #c, etc */
+  /* AND COULD ADD THE INDIVIDUAL STYLES FOR EACH BOX */
+  
+  
+  
   body, main {
     width: 960px;
     height: 700px;
