@@ -43,6 +43,34 @@ aside {
 footer {
   height: 80px;
 }
+#a {
+  background-color: aqua;
+}
+#b {
+  background-color: aquamarine;
+}
+#c {
+  background-color: azure;
+}
+#d {
+  background-color: bisque;
+}
+#e {
+  background-color: blue;
+}
+#f {
+  background-color: blueviolet
+}
+#g {
+  background-color: brown;
+}
+#h {
+  background-color: cadetblue;
+}
+#i {
+  background-color: chartreuse;
+}
+
 
 /*++++++++++++++++++++++++++++++++++++++++++++++++++*/
 /* Change background color for desktop view */
@@ -86,5 +114,32 @@ footer {
   footer {
     width: 760px;
     height: 150px;
+  }
+  #a {
+    background-color: chocolate;
+  }
+  #b {
+    background-color: coral;
+  }
+  #c {
+    background-color: cornflowerblue;
+  }
+  #d {
+    background-color: cornsilk;
+  }
+  #e {
+    background-color: crimson;
+  }
+  #f {
+    background-color: cyan;
+  }
+  #g {
+    background-color: darkcyan;
+  }
+  #h {
+    background-color: darkgoldenrod;
+  }
+  #i {
+    background-color: darkgray;
   }
 }
