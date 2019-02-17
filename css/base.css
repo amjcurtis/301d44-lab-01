@@ -1,31 +1,31 @@
+
 html {
   box-sizing: border-box;
+  color: black;
 }
 * {
   box-sizing: inherit;
 }
+
+/* Mobile view (the default view) */
 body {
   width: 480px;
   height: 1055px;
   margin: auto;
 }
-header, aside, div, footer { /* OR add .box class to all these elems instead? */
-  background-color: black;
-  color: lightgray;
+header, aside, div, footer { /* Alternative idea: add .box class to all these elems instead */
   width: 480px;
   display: block; /* OR inline-block? */
   float: left;
+  position: relative;
   outline-width: 1px;
   outline-style: solid;
   outline-color: gray; 
 }
 p { /* Center ID letters horizontally and vertically */
-  text-align: center;
-  /* position: relative;
-  float: left;
+  position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%); */
 }
 header {
   height: 75px;
@@ -73,26 +73,18 @@ footer {
 
 
 /*++++++++++++++++++++++++++++++++++++++++++++++++++*/
-/* Change background color for desktop view */
+/* Change to desktop view */
 @media screen and (min-width: 768px) {
-  
-  /* OR COULD DO AN ID FOR EACH LETTER/BOX: #a, #b, #c, etc */
-  /* AND COULD ADD THE INDIVIDUAL STYLES FOR EACH BOX */
-  
-  
-  
+
   body, main {
     width: 960px;
     height: 700px;
     margin: auto;
   }
-  header, div, aside, footer { /* OR body? */
-    background-color: lightgray;
-    color: black;
+  header, div, aside, footer {
     outline-width: 1px;
     outline-style: solid;
     outline-color: gray; 
-    /* display: inline-block; */
   }
   header {
     width: 960px;
