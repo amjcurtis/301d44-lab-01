@@ -1,0 +1,75 @@
+/* Mobile view (the default view) */
+body {
+  width: 480px;
+  height: 1055px;
+  margin: auto;
+}
+header, aside, div, footer { /* Alternative idea: add .box class to all these elems instead */
+  width: 480px;
+  display: block; /* OR inline-block? */
+  float: left;
+  position: relative;
+  outline-width: 1px;
+  outline-style: solid;
+  outline-color: gray; 
+}
+p { /* Center letters horizontally and vertically; learned this technique from this article: https://vanseodesign.com/css/vertical-centering/ */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+header {
+  height: 75px;
+}
+aside {
+  height: 150px;
+}
+.rect-box {
+  height: 125px;
+}
+.square-box { /* For smaller internal boxes for e,f,g,h */
+  width: 240px;
+  height: 250px;
+}
+footer {
+  height: 80px;
+}
+
+
+/*++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+/* Change to desktop view */
+@media screen and (min-width: 768px) {
+
+  body, main {
+    width: 960px;
+    height: 700px;
+    margin: auto;
+  }
+  header, div, aside, footer {
+    outline-width: 1px;
+    outline-style: solid;
+    outline-color: gray; 
+  }
+  header {
+    width: 960px;
+    height: 100px;
+  }
+  aside {
+    width: 200px;
+    height: 600px;
+  }
+  .rect-box {
+    width: 380px;
+    height: 200px;
+    display: inline-block;
+  }
+  .square-box {
+    width: 190px;
+    height: 250px;
+  }
+  footer {
+    width: 760px;
+    height: 150px;
+  }
+}
