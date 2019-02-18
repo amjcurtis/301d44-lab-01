@@ -7,10 +7,13 @@ html {
   box-sizing: inherit;
 }
 body {
-  width: 480px;
-  height: 1055px;
+  /* width: 480px; */
+  width: 100vw;
+  /* height: 1055px; */
+  /* height: calc(1055 * (1055/480)); */
+  height: 100vh;
   margin: auto;
   /* display: flex; */
-  flex-wrap: wrap;
-  flex-direction: row;
+  /* flex-wrap: wrap; */
+  /* flex-direction: row; */
 }
