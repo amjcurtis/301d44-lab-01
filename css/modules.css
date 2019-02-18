@@ -30,7 +30,7 @@
 /*++++++++++++++++++++++++++++++++++++++++++++++++++*/
 
 /* Change to tablet view */
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 480px) {
   #a {
     background-color: darkkhaki;
   }
