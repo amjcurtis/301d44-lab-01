@@ -29,8 +29,41 @@
 
 /*++++++++++++++++++++++++++++++++++++++++++++++++++*/
 
-/* Change to desktop view */
+/* Change to tablet view */
 @media screen and (min-width: 768px) {
+  #a {
+    background-color: darkkhaki;
+  }
+  #b {
+    background-color: darkolivegreen;
+  }
+  #c {
+    background-color: darkorange;
+  }
+  #d {
+    background-color: darkorchid;
+  }
+  #e {
+    background-color: darksalmon;
+  }
+  #f {
+    background-color: darkseagreen;
+  }
+  #g {
+    background-color: darkturquoise;
+  }
+  #h {
+    background-color: green;
+  }
+  #i {
+    background-color: firebrick;
+  }
+}
+
+/*++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+/* Change to desktop view */
+@media screen and (min-width: 1000px) {
   #a {
     background-color: chocolate;
   }

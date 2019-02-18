@@ -1,20 +1,21 @@
 /* Mobile view (the default view) */
 body {
-  width: 480px;
+  /* width: 480px;
   height: 1055px;
-  margin: auto;
+  margin: auto; */
 }
 header, aside, div, footer { /* Alternative idea: add .box class to all these elems instead */
-  width: 480px;
+  width: 100%;
   display: block; /* OR inline-block? */
   float: left;
-  position: relative;
+  /* flex: left; */
+  position: relative; /* Helps to center text vertically */
   outline-width: 1px;
   outline-style: solid;
   outline-color: gray; 
 }
-p { /* Center letters horizontally and vertically; learned this technique from this article: https://vanseodesign.com/css/vertical-centering/ */
-  position: absolute;
+p { /* Center text horizontally and vertically; learned from https://vanseodesign.com/css/vertical-centering/ */
+  position: absolute; 
   top: 50%;
   left: 50%;
 }
@@ -28,17 +29,16 @@ aside {
   height: 125px;
 }
 .square-box { /* For smaller internal boxes for e,f,g,h */
-  width: 240px;
+  width: 50%;
   height: 250px;
 }
 footer {
   height: 80px;
 }
 
-
 /*++++++++++++++++++++++++++++++++++++++++++++++++++*/
 
-/* Change to desktop view */
+/* Change to tablet view */
 @media screen and (min-width: 768px) {
 
   body, main {
@@ -72,4 +72,11 @@ footer {
     width: 760px;
     height: 150px;
   }
+}
+
+/*++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+/* Change to desktop view */
+@media screen and (min-width: 1000px) {
+  
 }
